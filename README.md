@@ -11,3 +11,6 @@ Stego-suarus pt 2 was created using Stegosuite, also in Kali Linux. This was ori
 However, here, I simply used stegosuite embed -m "[message]" -o [file to output] -k="MGACTF" [image] 
 With -k meaning the key or the password.
 To undo this and find the flag, use stegosuite extract -k="MGACTF" [image].
+
+Steg1.bmp uses yet another tool, the Digital Invisble Ink Toolkit. This is a Windows GUI-based tool, so it should be pretty self-explanatory to retrieve the message here. Just
+use the Decode tab, select a path for the message to be output to, and go. There is no password for this one.
