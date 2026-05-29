@@ -4,16 +4,18 @@ The answer is MGACTF{NO WAY:)I NOT UR KITTEH}.
 
 STEGO-SAURUS PT 1</br>
 This challenge was created using Steghide in Kali Linux. I made several challenges with this tool, including some layered challenges, but I only added one here.
-Using _steghide embed -cf [image] -ef [secret]_, I was able to hide the secret file within the cover image.
-The _cf_ stands for _cover file_, or the photo that will contain the secret. Thus, _ef_ stands for _embed file_, or the secret that is put inside of the cover file. 
-With this in mind, you can undo this using _steghide extract -sf [image]_.
-Here, _sf_ would be _stegofile_, the file with the steganographic text hidden inside of it.
+Using "steghide embed -cf [image] -ef [secret]", I was able to hide the secret file within the cover image.
+The cf stands for cover file, or the photo that will contain the secret. Thus, ef stands for embed file, or the secret that is put inside of the cover file. 
+With this in mind, you can undo this using steghide extract -sf [image].
+Here, sf would be stegofile, the file with the steganographic text hidden inside of it.
 Use password MGACTF. The original password was based on the flavortext of the challenge and previous challenges, but I recreated it with the MGACTF password for simplicity here.
 
 STEGO-SAURUS PT 2 </br>
-I created this one with another Kali tool called Stegosuite. I used _stegosuite embed -m "[message]" -o [file to output] -k="MGACTF" [image]_.
-With _-k_ meaning the key, or the password.
-To undo this and find the flag, use _stegosuite extract -k="MGACTF" [image]_.
+I created this one with another Kali tool called Stegosuite. I used:
+stegosuite embed -m "[message]" -o [file to output] -k="MGACTF" [image]
+With -k meaning the key, or the password.
+To undo this and find the flag, use:
+stegosuite extract -k="MGACTF" [image]
 
 MGASIGN.BMP</br>
 This one uses a Windows GUI tool called Digital Invisible Ink Toolkit. Just use the Decode tab and select a path for the message to be output to. There is no password for this one.
