@@ -1,8 +1,8 @@
-LOLCODE CHALLENGE</br>
+LOLCODE CHALLENGE
 Once you decipher how the language works with if statements, it's pretty easy to follow the logic and determine which answer is correct.
 The answer is MGACTF{NO WAY:)I NOT UR KITTEH}.
 
-STEGO-SAURUS PT 1</br>
+STEGO-SAURUS PT 1
 This challenge was created using Steghide in Kali Linux. I made several challenges with this tool, including some layered challenges, but I only added one here.
 Using "steghide embed -cf [image] -ef [secret]", I was able to hide the secret file within the cover image.
 The cf stands for cover file, or the photo that will contain the secret. Thus, ef stands for embed file, or the secret that is put inside of the cover file. 
@@ -10,12 +10,12 @@ With this in mind, you can undo this using steghide extract -sf [image].
 Here, sf would be stegofile, the file with the steganographic text hidden inside of it.
 Use password MGACTF. The original password was based on the flavortext of the challenge and previous challenges, but I recreated it with the MGACTF password for simplicity here.
 
-STEGO-SAURUS PT 2 </br>
+STEGO-SAURUS PT 2
 I created this one with another Kali tool called Stegosuite. I used:
 stegosuite embed -m "[message]" -o [file to output] -k="MGACTF" [image]
 With -k meaning the key, or the password.
 To undo this and find the flag, use:
 stegosuite extract -k="MGACTF" [image]
 
-MGASIGN.BMP</br>
+MGASIGN.BMP
 This one uses a Windows GUI tool called Digital Invisible Ink Toolkit. Just use the Decode tab and select a path for the message to be output to. There is no password for this one.
